@@ -1,0 +1,7 @@
+header {
+
+    @include flex(row, center, center);
+    background-color: $marshtomp-green;
+    height: 80px;
+    color: $reshiram-white;
+}

@@ -1,0 +1,35 @@
+main {
+
+    ul {
+
+        list-style-type: none;
+    }
+
+    .container {
+
+        @include container(80%);
+        @include flex(row, center, center);
+        padding: 40px 0;
+    }
+
+    & > ul {
+
+        padding: 40px 0;
+    }
+
+    .employee {
+
+        @include flex(row,space-between,center);
+        width: 100%;
+
+        .employee-info {
+
+            min-width: 150px;
+        }
+
+        .employee-cta {
+            
+            padding: 0 5px;
+        }
+    }
+}
