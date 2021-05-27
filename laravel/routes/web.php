@@ -19,3 +19,5 @@ Route::get('employee/{id}', 'HotelController@show') -> name('show');
 
 Route::get('employee/edit/{id}', 'HotelController@edit') -> name('edit');
 Route::post('employee/update/{id}', 'HotelController@update') -> name('update');
+
+Route::get('employee/delete/{id}', 'HotelController@delete') -> name('delete');

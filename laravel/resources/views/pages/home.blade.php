@@ -20,13 +20,15 @@
                                         {{ $employee['lastname'] }}
                                     </a>
                                 </li>
-                                <li class="employee-cta update">
-                                    <a href="{{ route('edit', $employee -> id) }}">
+                                <li>
+                                    <a class="employee-cta update" href="{{ route('edit', $employee -> id) }}">
                                         <i class="fas fa-edit"></i>
                                     </a>
                                 </li>
-                                <li class="employee-cta delete">
-                                    <i class="fas fa-trash-alt"></i>
+                                <li>
+                                    <a class="employee-cta delete" href="{{ route('delete', $employee -> id) }}">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
                                 </li>
                             </ul>
                         </li>

@@ -37,12 +37,12 @@ main {
             padding: 0 5px;
         }
 
-        .employee-cta.delete {
+        a.employee-cta.delete {
 
             color: $groudon-red;
         }
 
-        .employee-cta.update {
+        a.employee-cta.update {
 
             color: $whiscash-blue;
         }

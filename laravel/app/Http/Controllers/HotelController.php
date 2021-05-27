@@ -42,5 +42,13 @@ class HotelController extends Controller
 
         return redirect() -> route('show', $employee -> id);
     }
+
+    public function delete($id) {
+
+        $employee = Employee::findOrFail($id);
+        $employee -> delete();
+
+        return redirect() -> route('home');
+    }
 }
 

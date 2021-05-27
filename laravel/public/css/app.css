@@ -63,11 +63,11 @@ main .employee .employee-cta {
   padding: 0 5px;
 }
 
-main .employee .employee-cta.delete {
+main .employee a.employee-cta.delete {
   color: #eb2d2d;
 }
 
-main .employee .employee-cta.update {
+main .employee a.employee-cta.update {
   color: #5275b5;
 }
 
