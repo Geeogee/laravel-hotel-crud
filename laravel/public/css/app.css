@@ -38,10 +38,6 @@ main .container {
   padding: 40px 0;
 }
 
-main > ul {
-  padding: 40px 0;
-}
-
 main .employee {
   display: flex;
   flex-direction: row;
@@ -50,11 +46,42 @@ main .employee {
   width: 100%;
 }
 
+main .employee a {
+  text-decoration: none;
+  color: #3c95c8;
+}
+
+main .employee a:hover {
+  text-decoration: underline;
+}
+
 main .employee .employee-info {
   min-width: 150px;
 }
 
 main .employee .employee-cta {
   padding: 0 5px;
+}
+
+main .employee .employee-cta.delete {
+  color: #eb2d2d;
+}
+
+main .employee .employee-cta.update {
+  color: #5275b5;
+}
+
+section#employee-details .container {
+  min-height: calc(100vh - 160px);
+}
+
+section#employee-details .wrapper-employee-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+section#employee-details .wrapper-employee-info .employee-info {
+  min-width: 100px;
 }
 

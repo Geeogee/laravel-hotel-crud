@@ -12,15 +12,20 @@ main {
         padding: 40px 0;
     }
 
-    & > ul {
-
-        padding: 40px 0;
-    }
-
     .employee {
 
         @include flex(row,space-between,center);
         width: 100%;
+
+        a {
+            text-decoration: none;
+            color: $wailmer-blue;
+
+            &:hover {
+
+                text-decoration: underline;
+            }
+        }
 
         .employee-info {
 
@@ -31,5 +36,17 @@ main {
             
             padding: 0 5px;
         }
+
+        .employee-cta.delete {
+
+            color: $groudon-red;
+        }
+
+        .employee-cta.update {
+
+            color: $whiscash-blue;
+        }
+
+
     }
 }

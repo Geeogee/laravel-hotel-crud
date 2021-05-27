@@ -1,0 +1,16 @@
+section#employee-details {
+
+    .container {
+
+        min-height: calc(100vh - 160px);
+    }
+    .wrapper-employee-info {
+
+        @include flex(row, null, center);
+
+        .employee-info {
+
+            min-width: 100px;
+        }
+    }
+}

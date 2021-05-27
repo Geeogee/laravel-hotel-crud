@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HotelController@home') -> name('home');
+Route::get('employee/{id}', 'HotelController@show') -> name('show');

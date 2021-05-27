@@ -13,4 +13,12 @@ class HotelController extends Controller
 
         return view('pages.home', compact('employees'));
     }
+
+    public function show($id) {
+
+        $employee = Employee::findOrFail($id);
+
+        return view('pages.show', compact('employee'));
+    }
 }
+
