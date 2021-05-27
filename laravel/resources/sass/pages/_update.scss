@@ -1,0 +1,56 @@
+section#update-user {
+
+    .container {
+
+        min-height: calc(100vh - 160px);
+        @include flex(column, center, center);
+    }
+
+    form {
+
+        @include flex(column,null,null);
+
+        .wrapper-field {
+
+            @include flex(row,space-between,center);
+    
+            input {
+    
+                margin: 3px 10px;
+                padding: 10px;
+                width: 300px;
+                border-radius: 5px;
+                border: 2px solid $wailmer-blue;
+    
+                &:focus {
+    
+                    outline: 0;
+                }
+            }
+
+            .is-invalid {
+
+                border: 2px solid $groudon-red;
+            }
+        }
+
+        button[type=submit] {
+
+            margin-top: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: $whiscash-blue;
+            color: $reshiram-white;
+            border: 0;
+            box-shadow: 1px 3px $garchomp-blue;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+
+    .errors-log {
+
+        margin-top: 20px;
+    }
+    
+}

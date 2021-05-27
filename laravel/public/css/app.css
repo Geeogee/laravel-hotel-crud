@@ -85,3 +85,55 @@ section#employee-details .wrapper-employee-info .employee-info {
   min-width: 100px;
 }
 
+section#update-user .container {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section#update-user form {
+  display: flex;
+  flex-direction: column;
+}
+
+section#update-user form .wrapper-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section#update-user form .wrapper-field input {
+  margin: 3px 10px;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 2px solid #3c95c8;
+}
+
+section#update-user form .wrapper-field input:focus {
+  outline: 0;
+}
+
+section#update-user form .wrapper-field .is-invalid {
+  border: 2px solid #eb2d2d;
+}
+
+section#update-user form button[type=submit] {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #5275b5;
+  color: #FFF;
+  border: 0;
+  box-shadow: 1px 3px #364f7d;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+section#update-user .errors-log {
+  margin-top: 20px;
+}
+

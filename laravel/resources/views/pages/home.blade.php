@@ -21,7 +21,9 @@
                                     </a>
                                 </li>
                                 <li class="employee-cta update">
-                                    <i class="fas fa-edit"></i>
+                                    <a href="{{ route('edit', $employee -> id) }}">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
                                 </li>
                                 <li class="employee-cta delete">
                                     <i class="fas fa-trash-alt"></i>
