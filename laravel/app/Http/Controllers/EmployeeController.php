@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Employee;
 
-class HotelController extends Controller
+class EmployeeController extends Controller
 {
     public function home() {
 
@@ -34,7 +34,7 @@ class HotelController extends Controller
             'firstname' => 'required|string',
             'lastname' => 'required|string',
             'role' => 'required|string',
-            'ral' => 'required|integer'
+            'ral' => 'nullable|integer'
         ]);
 
         $employee = Employee::findOrFail($id);

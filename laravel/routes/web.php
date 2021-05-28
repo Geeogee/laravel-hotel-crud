@@ -13,11 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HotelController@home') -> name('home');
+Route::get('/', 'EmployeeController@home') -> name('home');
 
-Route::get('employee/{id}', 'HotelController@show') -> name('show');
+Route::get('employee/{id}', 'EmployeeController@show') -> name('show');
 
-Route::get('employee/edit/{id}', 'HotelController@edit') -> name('edit');
-Route::post('employee/update/{id}', 'HotelController@update') -> name('update');
+Route::get('employee/edit/{id}', 'EmployeeController@edit') -> name('edit');
+Route::post('employee/update/{id}', 'EmployeeController@update') -> name('update');
 
-Route::get('employee/delete/{id}', 'HotelController@delete') -> name('delete');
+Route::get('employee/delete/{id}', 'EmployeeController@delete') -> name('delete');
